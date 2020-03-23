@@ -33,7 +33,7 @@ function SignUp(props) {
             }
         })
             .then((response) => {
-                // set token to localStorage if remember me checked and get user details
+                // set token to localStorage if remember me checkbox is checked and get user details
                 signingIn(response.data.token, true)
                     .then(function () {
                         toast.success('signed-up successfully!', {autoClose: 1200});
